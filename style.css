@@ -50,6 +50,13 @@ display: flex;
 
 
 }
+
+h1{
+  color: yellow;
+}
+h3{
+  color: yellow;
+}
 .avatar{
   width: 100px;
   height: 100px;
