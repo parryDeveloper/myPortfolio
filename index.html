@@ -1,62 +1,117 @@
 <Doctype html>
   <html>
-    <head>
-      <meta charset="UTF_8" />
-     
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <link rel="stylesheet" href="style.css"/>
-      <title>My website</title>
-    </head>
-    <body>
-      <nav>
-      <div class="logo"><img style ="width: 200px;" src="./images/LOGO.png" alt="logo"/>
-      </div>
-        <div class="nav-bar"><ul>
-         <li><a>Home</a></li>
-         <li><a href="https://github.com/parryDeveloper">Github</a></li>
-         <li><a></a>About me</li>
-         <li><a></a>Contact</li>
-        </ul></div>
-      </nav>
+  <head>
+    <meta charset="UTF_8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <div class="about-me">
-        <div class="written"><h2>parerna kapoor</h2>
-        <h1>Front-end developer</h1>
-        <p>Recent graduate with degree in Bachelor of information technology.<br>Experienced with front end languages like HTML, CSS, JS and React <br>etc, looking for opportunity explore and learn more.</p>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>My website</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo"><img style=" width: 200px;" src="./images/logo.png" alt="logo" />
       </div>
-        <div class="avatar"><img style="height: 150px; width: 200px;"src="./images/avatar.png" alt="avatar"/></div>
+      <div class="nav-bar" id="myNavbar">
+
+        <a href="index.html">Home</a>
+        <a href="https://github.com/parryDeveloper">Github</a>
+        <a href="#about-me">About me</a>
+        <a href="#contact">Contact</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
 
-      <section>
-        <div class="name-head"> <h1>Projects</h1></div>
-       
+
+    </nav>
+    <div class="headshot">
+      <h2>Parerna Kapoor</h2>
+      <h1>Front end developer | web developer</h1>
+      <button> Hire Me</button>
+    </div>
+
+    <div class="aboutme">
+      <div class="written">
+        <h2><a name="about-me">About me</a></h2>
+
+        <p>Recent graduate with degree in Bachelor of information technology.<br>Experienced with front end languages
+          like HTML, CSS, JS and React <br>etc, looking for opportunity explore and learn more.</p>
+      </div>
+      <div class="avatar"><img style="height: 150px; width: 200px;" src="./images/avatar.png" alt="avatar" /></div>
+    </div>
+
+    <div class="section">
+      <div class="name-head">
+        <h1>Projects</h1>
+      </div>
+      <div class="card">
         <div class="pro-1">
-         <h3> <a href="	https://pounders-burger.web.app/ ">Project Pounders</a> </h3>
-        <img style="width: 200px; height : 140px;" src="./images/pro-1.jpeg" alt="pro-1"/>
+          <h3> <a href="	https://pounders-burger.web.app/ ">Project Pounders</a> </h3>
+          <img style="width: 210px; height : 140px;" src="./images/pro-1.jpeg" alt="pro-1" />
         </div>
-        <div class="pro-2"><h3><a href="https://parrydeveloper.github.io/new1Project/">Payment card</a></h3>
-          <img style="width: 200px; height : 140px;" src="./images/illustration-hero.png" alt="pro-2"/></div>
-      </section>
-      <div id="contact">
-        
-          <a href="https://parrydeveloper.github.io/new1Project/"> <img  style="width: 40px;" src="./images/IN.png"></a>
-              <a href="https://github.com/parryDeveloper"><img  style="width: 30px;" src="./images/github.png"></a>
-       
-             </div>
+        <div class="pro-1">
+          <h3><a href="https://parrydeveloper.github.io/new1Project/">Payment card</a></h3>
+          <img style="width: 210px; height : 140px;" src="./images/illustration-hero.png" alt="pro-2" />
+        </div>
       </div>
-    </body>
 
-    
-    <footer>
+    </div>
+    <div class="contact">
+      <div class="form1">
+        <form>
+          <h1><a name="contact">Contact </a></h1>
+          <div class="input-section">
+            <div class="input-group1">
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" name="first-name" value="Your first name"></input>
+            </div>
+            <div class="input-group1">
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last-name" value="Your last name"></input>
+            </div>
+          </div>
+          <div class="input-section">
+            <label for="message">Message:</label>
+            <textarea placeholder="Your Message" type="text" name="message"></textarea>
+          </div>
+          <div class="input-section">
 
-      @copyright 2021
-      <ul>
-         <li><a>Home</a></li>
-         <li><a href="https://github.com/parryDeveloper">Github</a></li>
-         <li><a></a>About me</li>
-         <li><a></a>Contact</li>
-        </ul>
-    </footer>
+          </div>
+          <input class="button" type="submit" id="submit" name="submit" value="submit"></input>
+        </form>
+      </div>
+      <div class="contact-head">
+        <h2> Here Are My Socials </h2>
+      </div>
+
+      <div class="social"> <a href=" http://www.linkedin.com/in/parerna-kapoor-IT322145184"> <img
+            style="width: 30px; height: 30px;" src="./images/IN.png"></a></div>
+      <div class="social"> <a href="https://github.com/parryDeveloper">
+          <img style="width: 30px; height: 30px;" src="./images/github.png"></a>
+      </div>
+      <div class="social"><a href="https://www.instagram.com/creative4funtech/"><img style=" width: 30px; height: 30px;"
+            src="./images/instagram.png" /></a>
+      </div>
+    </div>
+
+  </body>
+
+
+  <footer>
+
+
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="https://github.com/parryDeveloper">Github</a></li>
+      <li><a href="#about-me">About me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </footer>
+  <div class="end"> @copyright All Rights reserved by parerna kapoor</div>
+
   </html>
 </Doctype>
