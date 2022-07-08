@@ -273,8 +273,7 @@ ul {
 
   }
 
-  /* .logo {
-    width: 100px;
-    height: auto;
-  } */
+  .logo {
+    display: none;
+  }
 }
