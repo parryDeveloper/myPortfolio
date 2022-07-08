@@ -22,9 +22,9 @@ nav {
 
 a {
   color: #f1d244;
-  margin: 10px;
+
   text-decoration: none;
-  padding: 20px;
+
 
 }
 
@@ -38,6 +38,8 @@ li {
 ol {
   display: flex;
   justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -229,13 +231,16 @@ button {
 
 /* hamburger menu */
 
+
 ul {
   display: flex;
   list-style-type: none;
-
+  width: 500px;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 30px;
 }
+
+
 
 .hamburger {
   display: none;
